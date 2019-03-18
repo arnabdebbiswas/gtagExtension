@@ -54,42 +54,42 @@ if (typeof accounts !== 'function') {
 
 }
 
-//These gTagAccounts will be retrieved from user input using launch extension.
-
+//The gTagAccounts will be retrieved from user input using launch extension.
 
 accounts('DC-6587013').then(gtag('event', 'conversion', {
     'allow_custom_scripts': true,
     'send_to': 'DC-6587013/telus001/telus000+standard'
-}));
+})).catch(errorMessage=>{
+    //_satellite.logger.log(errorMessage);
+}
+);
 
-
-accounts('DC-4402085');
-accounts('AW-9415420');
-accounts('AW-9386397');
-accounts('DC-8005118');
-accounts('AW-9333792');
-accounts('AW-1064506');
-accounts('AW-9393024');
-accounts('AW-1046799');
-accounts('AW-7947089');
-accounts('AW-1066229');
-
-gtag('event', 'conversion', {
-    'send_to': 'AW-1064506604/hk1kCIaL-1wQ7KnM-wM'
-});
-
-gtag('event', 'conversion', {
-    'send_to': 'AW-794708998/S8pKCLnI2YkBEIaY-foC'
-});
+// accounts('DC-4402085');
+// accounts('AW-9415420');
+// accounts('AW-9386397');
+// accounts('DC-8005118');
+// accounts('AW-9333792');
+// accounts('AW-1064506');
+// accounts('AW-9393024');
+// accounts('AW-1046799');
+// accounts('AW-7947089');
+// accounts('AW-1066229');
 
 // gtag('event', 'conversion', {
-//     'allow_custom_scripts': true,
-//     'send_to': 'DC-6587013/telus001/telus000+standard'
+//     'send_to': 'AW-1064506604/hk1kCIaL-1wQ7KnM-wM'
 // });
 
-gtag('event', 'conversion', {
-    'send_to': 'AW-123456789/AbC-D_efG-h12_34-567',
-    'value': 1.0,
-    'currency': 'USD'
-});
+// gtag('event', 'conversion', {
+//     'send_to': 'AW-794708998/S8pKCLnI2YkBEIaY-foC'
+// });
 
+// // gtag('event', 'conversion', {
+// //     'allow_custom_scripts': true,
+// //     'send_to': 'DC-6587013/telus001/telus000+standard'
+// // });
+
+// gtag('event', 'conversion', {
+//     'send_to': 'AW-123456789/AbC-D_efG-h12_34-567',
+//     'value': 1.0,
+//     'currency': 'USD'
+// });
